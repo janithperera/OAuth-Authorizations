@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleDriveFileManager", "GoogleDriveFileManager\GoogleDriveFileManager.csproj", "{0CB50C8E-E3B1-42B1-BA0B-9F52EF672477}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CB50C8E-E3B1-42B1-BA0B-9F52EF672477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB50C8E-E3B1-42B1-BA0B-9F52EF672477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB50C8E-E3B1-42B1-BA0B-9F52EF672477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB50C8E-E3B1-42B1-BA0B-9F52EF672477}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3917729E-77E6-4514-9CF5-3AE9EA2FAD8D}
+	EndGlobalSection
+EndGlobal

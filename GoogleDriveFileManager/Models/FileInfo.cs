@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OAuth_Authorization_sample_application.Models
+namespace GoogleDriveFileManager.Models
 {
     public class FileInfo
     {
@@ -14,6 +14,3 @@ namespace OAuth_Authorization_sample_application.Models
         public DateTime? createdTime { get; set; }
     }
 }
-
-
-

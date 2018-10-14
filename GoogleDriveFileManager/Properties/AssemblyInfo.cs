@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OAuth_Authorization_sample_application")]
+[assembly: AssemblyTitle("GoogleDriveFileManager")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OAuth_Authorization_sample_application")]
+[assembly: AssemblyProduct("GoogleDriveFileManager")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("441658ac-66ac-4db7-9df8-7018fa33ecf7")]
+[assembly: Guid("0cb50c8e-e3b1-42b1-ba0b-9f52ef672477")]
 
 // Version information for an assembly consists of the following four values:
 //

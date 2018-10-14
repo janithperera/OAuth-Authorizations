@@ -11,7 +11,7 @@ using System.Reflection;
 using System.Threading;
 using System.Web;
 
-namespace OAuth_Authorization_sample_application.Models
+namespace GoogleDriveFileManager.Models
 {
     public class FileOperations
     {

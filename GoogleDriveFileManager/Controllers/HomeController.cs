@@ -1,4 +1,4 @@
-﻿using OAuth_Authorization_sample_application.Models;
+﻿using GoogleDriveFileManager.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace OAuth_Authorization_sample_application.Controllers
+namespace GoogleDriveFileManager.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,7 +17,7 @@ namespace OAuth_Authorization_sample_application.Controllers
         }
 
         [HttpPost]
-        public ActionResult DeleteFile(OAuth_Authorization_sample_application.Models.FileInfo file)
+        public ActionResult DeleteFile(GoogleDriveFileManager.Models.FileInfo file)
         {
             FileOperations.DeleteFile(file);
             return RedirectToAction("GetGoogleDriveFiles");
