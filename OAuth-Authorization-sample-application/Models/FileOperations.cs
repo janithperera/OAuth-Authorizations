@@ -33,7 +33,6 @@ namespace OAuth_Authorization_sample_application.Models
                     new FileDataStore(FilePath, true)).Result;
             }
 
-            //Create Drive API service.
             DriveService service = new DriveService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
@@ -47,14 +46,10 @@ namespace OAuth_Authorization_sample_application.Models
         {
             DriveService service = GetService();
 
-            // Define parameters of request.
             FilesResource.ListRequest FileListRequest = service.Files.List();
 
-            //listRequest.PageSize = 10;
-            //listRequest.PageToken = 10;
             FileListRequest.Fields = "nextPageToken, files(id, name, size, version, trashed, createdTime)";
 
-            // List files.
             IList<Google.Apis.Drive.v3.Data.File> files = FileListRequest.Execute().Files;
             List<FileInfo> FileList = new List<FileInfo>();
 
@@ -119,18 +114,15 @@ namespace OAuth_Authorization_sample_application.Models
                 {
                     case DownloadStatus.Downloading:
                         {
-                            //Console.WriteLine(progress.BytesDownloaded);
                             break;
                         }
                     case DownloadStatus.Completed:
                         {
-                            //Console.WriteLine("Download complete.");
                             SaveStream(stream1, FilePath);
                             break;
                         }
                     case DownloadStatus.Failed:
                         {
-                            //Console.WriteLine("Download failed.");
                             break;
                         }
                 }
@@ -152,14 +144,12 @@ namespace OAuth_Authorization_sample_application.Models
             DriveService service = GetService();
             try
             {
-                // Initial validation.
                 if (service == null)
                     throw new ArgumentNullException("service");
 
                 if (files == null)
                     throw new ArgumentNullException(files.id);
 
-                // Make the request.
                 service.Files.Delete(files.id).Execute();
             }
             catch (Exception ex)
